@@ -20,13 +20,12 @@
             }
             .self{
                 flex:none;
-                width:1200px;
-                height:150px;
+                width:95%;
+                height:3%;
                 font-size:18px;
                 font-weight:bold;
-                padding:10px;
+                padding:8px;
                 border:2px solid white;
-                border-radius:10px;
                 text-align:left;
             }
             .self-title{
@@ -61,14 +60,17 @@
                 font-weight:bold;
             }
             .answer{
-                width:800px;
-                margin-left:200px;
-                padding:35px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            .text{
+                width:80%;
                 text-align:left;
+                padding:35px;
                 font-size:18px;
             }
             .back{
-                justify-content:center;
                 border:none;
                 background-color:white;
                 color:blue;
@@ -76,6 +78,16 @@
                 font-weight:bold;
                 text-decoration:underline;
                 cursor:pointer;
+            }
+            @media(max-width:1250px){
+                .btn{
+                    width:45%;
+                }
+            }
+            @media(max-width:500px){
+                .btn{
+                    width:90%;
+                }
             }
         </style>
     </head>
@@ -85,7 +97,7 @@
             <div class="self">
                 <div class="self-title">
                     個人簡介
-                    <img style="width:30px;height:30px;" src="https://aaronka0.github.io/WeHelp/Q1.jpg"/>
+                    <img style="width:30px;height:30px;" src="Q1.jpg"/>
                 </div>
                 <div class="self-content">
                     你好，我是高偉峻，畢業於中華大學資訊工程系，今年36歲，居住在桃園，目前在星巴克任職。</br>
@@ -96,77 +108,89 @@
                 class="btn"
                 onmouseover="over(this);" onmouseout="out(this);"
                 onclick="content(two);"
-            ><img class="img" src="https://aaronka0.github.io/WeHelp/Q2.jpg"/><br>
+            ><img class="img" src="Q2.jpg"/><br>
             為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。</button>
             <button 
                 class="btn"
                 onmouseover="over(this);" onmouseout="out(this);"
                 onclick="content(three);"
-            ><img class="img" src="https://aaronka0.github.io/WeHelp/Q3.jpg"/><br>
+            ><img class="img" src="Q3.jpg"/><br>
             如果參與這個計畫，會怎麼安排學習時間？</button>
             <button 
                 class="btn"
                 onmouseover="over(this);" onmouseout="out(this);"
                 onclick="content(four);"
-            ><img class="img" src="https://aaronka0.github.io/WeHelp/Q4.jpg"/><br>
+            ><img class="img" src="Q4.jpg"/><br>
             是否有想要加入的軟體公司？為什麼想加入該公司？</button>  
             <button 
                 class="btn"
                 onmouseover="over(this);" onmouseout="out(this);"
                 onclick="content(five);"
-            ><img class="img" src="https://aaronka0.github.io/WeHelp/Q5.jpg"/><br>
+            ><img class="img" src="Q5.jpg"/><br>
             請描述一件讓你產生明顯負面情緒的事情，你如何處理該情緒？</button>
             <button 
                 class="btn"
                 onmouseover="over(this);" onmouseout="out(this);"
                 onclick="content(six);"
-            ><img class="img" src="https://aaronka0.github.io/WeHelp/Q6.jpg"/><br>
+            ><img class="img" src="Q6.jpg"/><br>
             關於這份申請網頁，請分享一個你開發時的技術心得。</button>
             <button 
                 class="btn"
                 onmouseover="over(this);" onmouseout="out(this);"
                 onclick="content(seven);"
-            ><img class="img" src="https://aaronka0.github.io/WeHelp/Q7.jpg"/><br>
+            ><img class="img" src="Q7.jpg"/><br>
             其他想要對我們說的事情？</button>
         </div>
 
         <div id="two" class="question">為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。
             <div class="answer">
-                因為大學沒有學過網頁的程式語言，透過彭彭的課程已經在幾個月內看完HTML、CSS、JavaScript以及Python，目前按照WeHelp第一階段的訓練規劃，持續進行練習，讓自己能在進入實際訓練時累積更多實力。
+                <div class="text">
+                    因為大學沒有學過網頁的程式語言，透過彭彭的課程已經在幾個月內看完HTML、CSS、JavaScript以及Python，目前按照WeHelp第一階段的訓練規劃，持續進行練習，讓自己能在進入實際訓練時累積更多實力。
+                </div>
             </div>
             <button class="back" onclick="turn(two);">返回</button>
         </div>
         <div id="three" class="question">如果參與這個計畫，會怎麼安排學習時間？
             <div class="answer">
-                在第一階段時，目前Part Time的工作時間大約一週20~30小時，雖然大學念資工系有點基礎，但目標是進入這行業，不是和沒基礎的人比較，要追上未來的工作夥伴肯定需要加倍努力，因此還是規畫一週學習時間在50~55小時，若在此階段執行困難，會直接離職全心投入，而在進入第二階段前，一定會離職，全力準備接下來的訓練，規劃一週70小時。
-                <br>第一階段:50~55 hr/週，平日6~7 hr/日，假日10 hr/日
-                <br>第二階段:70 hr/週，10 hr/日
-                <br>第三階段:70 hr/週，10 hr/日
+                <div class="text">
+                    在第一階段時，目前Part Time的工作時間大約一週20~30小時，雖然大學念資工系有點基礎，但目標是進入這行業，不是和沒基礎的人比較，要追上未來的工作夥伴肯定需要加倍努力，因此還是規畫一週學習時間在50~55小時，若在此階段執行困難，會直接離職全心投入，而在進入第二階段前，一定會離職，全力準備接下來的訓練，規劃一週70小時。
+                    <br>第一階段:50~55 hr/週，平日6~7 hr/日，假日10 hr/日
+                    <br>第二階段:70 hr/週，10 hr/日
+                    <br>第三階段:70 hr/週，10 hr/日
+                </div>
             </div>
             <button class="back" onclick="turn(three);">返回</button>
         </div>
         <div id="four" class="question">是否有想要加入的軟體公司？為什麼想加入該公司？
             <div class="answer">
-                Google<br>
-	            因為我的目標是從製作網頁進入，並朝後端營運的方向發展，最後精進演算法、AI人工智慧，而Google的發展歷史幾乎符合，他們起初靠一個搜尋引擎網頁，擁有強大的演算法技術，也有先進的AI人工智慧開發，雖然在此同時掀起ChatGPT的風潮，但Google的開發技術還是世界數一數二，在裡面的工作夥伴也是各地的佼佼者，和這些聰明的夥伴上班，肯定也會讓自己在工作中有所學習，讓自己能有發揮的舞台且又能成長，呈現一個正向循環。
+                <div class="text">
+                    Google<br>
+	                因為我的目標是從製作網頁進入，並朝後端營運的方向發展，最後精進演算法、AI人工智慧，而Google的發展歷史幾乎符合，他們起初靠一個搜尋引擎網頁，擁有強大的演算法技術，也有先進的AI人工智慧開發，雖然在此同時掀起ChatGPT的風潮，但Google的開發技術還是世界數一數二，在裡面的工作夥伴也是各地的佼佼者，和這些聰明的夥伴上班，肯定也會讓自己在工作中有所學習，讓自己能有發揮的舞台且又能成長，呈現一個正向循環。
+                </div>
             </div>
             <button class="back" onclick="turn(four);">返回</button>
         </div>
         <div id="five" class="question">請描述一件讓你產生明顯負面情緒的事情，你如何處理該情緒？
             <div class="answer">
-                看了許多心理相關方面的書，我會分析自己當下的生理狀態，例如:流汗、燥熱、心跳加速、發抖...等，當我在做這件事的時候就已經減緩情緒，然後想想為什麼生氣、緊張、難過？自己和自己對話，在分析的時候就會漸漸的理性，而不被情緒控制，因為情緒無法解決問題。
+                <div class="text">
+                    看了許多心理相關方面的書，我會分析自己當下的生理狀態，例如:流汗、燥熱、心跳加速、發抖...等，當我在做這件事的時候就已經減緩情緒，然後想想為什麼生氣、緊張、難過？自己和自己對話，在分析的時候就會漸漸的理性，而不被情緒控制，因為情緒無法解決問題。
+                </div>
             </div>
             <button class="back" onclick="turn(five);">返回</button>
         </div>
         <div id="six" class="question">關於這份申請網頁，請分享一個你開發時的技術心得。
             <div class="answer">
-                製作前，思考如何做出不呆版無聊僅有單頁的網頁，便想到去參考Apple或Google大企業的網頁呈現方式，有了靈感後，決定製作了這個有回應式的功能，原本想每個標題製作一份網頁，但利用下一頁、前一頁跳轉網頁並不能讓我足夠發揮從影片中學到的技巧，為了加入更多的應用，才完成了這份申請表。
+                <div class="text">
+                    製作前，思考如何做出不呆版無聊僅有單頁的網頁，便想到去參考Apple或Google大企業的網頁呈現方式，有了靈感後，決定製作了這個有回應式的功能，原本想每個標題製作一份網頁，但利用下一頁、前一頁跳轉網頁並不能讓我足夠發揮從影片中學到的技巧，為了加入更多的應用，才完成了這份申請表。
+                </div>
             </div>
             <button class="back" onclick="turn(six);">返回</button>
         </div>
         <div id="seven" class="question">其他想要對我們說的事情？
             <div class="answer">
-                原本想試試自己能否在下班時間仍持續學習，結果堅持漸漸養成了習慣，也讀出了興趣，閱讀的範圍越來越廣，內容包含電腦科學、人際溝通、管理、理財、歷史、心理...等，幾個月前決定回到大學所學的資訊相關行業，找了許多資源，便在網路上找到了彭彭的課程，發現課程真的很容易理解，教學的規劃，讓我覺得有一種吸引力，能夠像看劇一樣持續學習下去，有時練習完才發覺已經天黑，但一個人學習卻少了能夠與人交流的樂趣，因為在這個資訊爆炸的時代，如果真心想學，網路上可以找到許多的課程，但我想尋找一起努力的夥伴，因此看到WeHelp非常興奮，看了招生說明會，也認同參加不是一種依賴，因為職場上是需要有獨力完成作業能力的人聚集在一起，合力創造出巨大的價值，就像參加訓練營的目的，同樣的執行結果，程式過程可以千變萬化，可以互相學習彼此的思考模式，碰撞出更大的火花，科技進步的速度，需要我們不斷的學習，正好符合我追求的目標。目前工作已從原本的管理職申請為兼職，加上年紀的關係，沒有退路，必須全力以赴，養成的閱讀習慣也讓我有信心不會半途而廢，真的很希望加入WeHelp一起向前!我想人生永遠不嫌晚，故事可以和程式碼一樣改寫!
+                <div class="text">
+                    原本想試試自己能否在下班時間仍持續學習，結果堅持漸漸養成了習慣，也讀出了興趣，閱讀的範圍越來越廣，內容包含電腦科學、人際溝通、管理、理財、歷史、心理...等，幾個月前決定回到大學所學的資訊相關行業，找了許多資源，便在網路上找到了彭彭的課程，發現課程真的很容易理解，教學的規劃，讓我覺得有一種吸引力，能夠像看劇一樣持續學習下去，有時練習完才發覺已經天黑，但一個人學習卻少了能夠與人交流的樂趣，因為在這個資訊爆炸的時代，如果真心想學，網路上可以找到許多的課程，但我想尋找一起努力的夥伴，因此看到WeHelp非常興奮，看了招生說明會，也認同參加不是一種依賴，因為職場上是需要有獨力完成作業能力的人聚集在一起，合力創造出巨大的價值，就像參加訓練營的目的，同樣的執行結果，程式過程可以千變萬化，可以互相學習彼此的思考模式，碰撞出更大的火花，科技進步的速度，需要我們不斷的學習，正好符合我追求的目標。目前工作已從原本的管理職申請為兼職，加上年紀的關係，沒有退路，必須全力以赴，養成的閱讀習慣也讓我有信心不會半途而廢，真的很希望加入WeHelp一起向前!我想人生永遠不嫌晚，故事可以和程式碼一樣改寫!
+                </div>
             </div>
             <button class="back" onclick="turn(seven);">返回</button>
         </div>
