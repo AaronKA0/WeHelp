@@ -1,0 +1,84 @@
+header{
+    background-color:black;
+    color:white;
+    text-align:center;
+    font-size:2em;
+    padding:8px 35px;
+    margin-bottom:10px;
+}
+.title{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.self{
+    flex:none;
+    width:95%;
+    height:3%;
+    font-size:18px;
+    font-weight:bold;
+    padding:8px;
+    border:2px solid white;
+    text-align:left;
+}
+.self-title{
+    text-align:center;
+    font-size:25px;
+    font-weight:bold;
+}
+.self-content{
+    padding:8px 25px;
+}
+.btn{
+    flex:none;
+    border-color:white;
+    width:30%;
+    height:220px;
+    font-size:18px;
+    font-weight:bold;
+    padding:10px;
+    border-radius:10px;
+    margin:15px;
+    cursor:pointer;
+}
+.img{
+    width:50px;
+    height:50px;
+    padding:10px;
+}
+.question{
+    display:none;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+}
+.answer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.text{
+    width:80%;
+    text-align:left;
+    padding:35px;
+    font-size:18px;
+}
+.back{
+    border:none;
+    background-color:white;
+    color:blue;
+    font-size:18px;
+    font-weight:bold;
+    text-decoration:underline;
+    cursor:pointer;
+}
+@media(max-width:1250px){
+    .btn{
+        width:45%;
+    }
+}
+@media(max-width:500px){
+    .btn{
+        width:90%;
+    }
+}
