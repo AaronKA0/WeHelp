@@ -4,92 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta charset="utf-8"/>
         <title>Application Form</title>
-        <style>
-            header{
-                background-color:black;
-                color:white;
-                text-align:center;
-                font-size:2em;
-                padding:8px 35px;
-                margin-bottom:10px;
-            }
-            .title{
-                display:flex;
-                flex-wrap:wrap;
-                justify-content:center;
-            }
-            .self{
-                flex:none;
-                width:95%;
-                height:3%;
-                font-size:18px;
-                font-weight:bold;
-                padding:8px;
-                border:2px solid white;
-                text-align:left;
-            }
-            .self-title{
-                text-align:center;
-                font-size:25px;
-                font-weight:bold;
-            }
-            .self-content{
-                padding:8px 25px;
-            }
-            .btn{
-                flex:none;
-                border-color:white;
-                width:30%;
-                height:220px;
-                font-size:18px;
-                font-weight:bold;
-                padding:10px;
-                border-radius:10px;
-                margin:15px;
-                cursor:pointer;
-            }
-            .img{
-                width:50px;
-                height:50px;
-                padding:10px;
-            }
-            .question{
-                display:none;
-                text-align:center;
-                font-size:30px;
-                font-weight:bold;
-            }
-            .answer{
-                display:flex;
-                justify-content:center;
-                align-items:center;
-            }
-            .text{
-                width:80%;
-                text-align:left;
-                padding:35px;
-                font-size:18px;
-            }
-            .back{
-                border:none;
-                background-color:white;
-                color:blue;
-                font-size:18px;
-                font-weight:bold;
-                text-decoration:underline;
-                cursor:pointer;
-            }
-            @media(max-width:1250px){
-                .btn{
-                    width:45%;
-                }
-            }
-            @media(max-width:500px){
-                .btn{
-                    width:90%;
-                }
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="wehelp.css">
     </head>
     <body>
         <header>WeHelp 申請網頁</header>
@@ -101,8 +16,8 @@
                 </div>
                 <div class="self-content">
                     你好，我是高偉峻，中華大學資訊工程系畢業，今年36歲，居住在桃園，目前在星巴克任職。<br>
-		    曾到澳洲打工兩年，在咖啡業待了七年多，下班平均每週花40多小時閱讀有興趣的書籍，維持三年發現自己對軟體工程還是保有熱情，便尋找資源找到了彭彭的課程，雖然畢業後沒有進入資訊相關行業，練習的過程還是讓我下定決心轉職，因此已從管理職位申請為兼職，計畫在下半年離職。我想證明嘗試闖完不同經歷後，還是能努力找回原本的路!
-                </div>    
+                    曾到澳洲打工兩年，在咖啡業待了七年多，下班平均每週花40多小時閱讀有興趣的書籍，維持三年發現自己對軟體工程還是保有熱情，便尋找資源找到了彭彭的課程，雖然畢業後沒有進入資訊相關行業，練習的過程還是讓我下定決心轉職，因此已從管理職位申請為兼職，計畫在下半年離職。我想證明嘗試闖完不同經歷後，還是能努力找回原本的路!
+                </div>
             </div>
             <button
                 class="btn"
@@ -145,7 +60,7 @@
         <div id="two" class="question">為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。
             <div class="answer">
                 <div class="text">
-                    因為大學沒有學過網頁的程式語言，透過彭彭的課程已經在幾個月內看完HTML、CSS、JavaScript以及Python，目前按照WeHelp第一階段的訓練規劃，持續進行練習，讓自己能在進入實際訓練時累積更多實力。
+                    雖然大學是資訊工程系，但我把自己當非本科系一樣從頭學習，透過彭彭的課程已經在幾個月內看完HTML、CSS、JavaScript以及Python，目前按照WeHelp第一階段的訓練規劃，持續進行練習，讓自己能在進入實際訓練時累積更多實力。
                 </div>
             </div>
             <button class="back" onclick="turn(two);">返回</button>
@@ -153,7 +68,7 @@
         <div id="three" class="question">如果參與這個計畫，會怎麼安排學習時間？
             <div class="answer">
                 <div class="text">
-                    在第一階段時，目前Part Time的工作時間大約一週20~30小時，雖然大學念資工系有點基礎，但目標是進入這行業，不是和沒基礎的人比較，要追上未來的工作夥伴肯定需要加倍努力，因此還是規畫一週學習時間在50~55小時，若在此階段執行困難，會直接離職全心投入，而在進入第二階段前，一定會離職，全力準備接下來的訓練，規劃一週70小時。
+                    在第一階段時，目前兼職的工作時間大約一週20~30小時，規畫下班學習時間在50~55小時，若在此階段執行困難，會直接離職全心投入，而在進入第二階段前，一定會離職，全力準備接下來的訓練，規劃一週70小時
                     <br>第一階段:50~55 hr/週，平日6~7 hr/日，假日10 hr/日
                     <br>第二階段:70 hr/週，10 hr/日
                     <br>第三階段:70 hr/週，10 hr/日
@@ -165,7 +80,7 @@
             <div class="answer">
                 <div class="text">
                     Google<br>
-	            因為我的目標是從製作網頁進入，並朝後端營運的方向發展，最後精進演算法、AI人工智慧，而Google的發展歷史幾乎符合，他們起初靠一個搜尋引擎網頁，擁有強大的演算法技術，也有先進的AI人工智慧開發，雖然在此同時掀起ChatGPT的風潮，但Google的開發技術還是世界數一數二，在裡面的工作夥伴也是各地的佼佼者，和這些聰明的夥伴上班，肯定也會讓自己在工作中有所學習，讓自己能有發揮的舞台且又能成長，呈現一個正向循環。
+	                我的目標是從製作網頁進入，並朝後端營運的方向發展，最後精進演算法、AI人工智慧，而Google的發展歷史幾乎符合，他們起初靠一個搜尋引擎網頁，擁有強大的演算法技術，也有先進的AI人工智慧開發，雖然在此同時掀起ChatGPT的風潮，但Google的開發技術還是世界數一數二，在裡面的工作夥伴也是各地的佼佼者，和這些聰明的夥伴上班，肯定也會讓自己在工作中有所學習，讓自己能有發揮的舞台且又能成長，呈現正向循環。    
                 </div>
             </div>
             <button class="back" onclick="turn(four);">返回</button>
@@ -173,7 +88,8 @@
         <div id="five" class="question">請描述一件讓你產生明顯負面情緒的事情，你如何處理該情緒？
             <div class="answer">
                 <div class="text">
-                    看了許多心理相關方面的書，我會分析自己當下的生理狀態，例如:流汗、燥熱、心跳加速、發抖...等，當我在做這件事的時候就已經減緩情緒，然後想想為什麼生氣、緊張、難過？自己和自己對話，在分析的時候就會漸漸的理性，而不被情緒控制，因為情緒無法解決問題。
+                    讓我感到負面情緒的事，是和身邊重要的朋友意見不合時。<br>
+                    當我意識到彼此不和諧，我會試著先安靜，能使自己不做出激動的回應並冷靜，同時還能先聆聽對方的立場及感受，分析雙方矛盾的核心，當利用理性思考時也不會因為情緒處理傷害對方，並說出自己在意的感受，提醒自己不能固執己見，試著提出雙方都能接受的方案，達成妥協。    
                 </div>
             </div>
             <button class="back" onclick="turn(five);">返回</button>
@@ -181,7 +97,7 @@
         <div id="six" class="question">關於這份申請網頁，請分享一個你開發時的技術心得。
             <div class="answer">
                 <div class="text">
-                    製作前，思考如何做出不呆版無聊僅有單頁的網頁，便想到去參考Apple或Google大企業的網頁呈現方式，有了靈感後，決定製作了這個有回應式的功能，原本想每個標題製作一份網頁，但利用下一頁、前一頁跳轉網頁並不能讓我足夠發揮從影片中學到的技巧，為了加入更多的應用，才完成了這份申請表。
+                    製作前，想做出不呆板、不僅有單頁的網頁，便去參考Apple或Google大企業的網頁呈現方式，有了靈感後，希望盡所能的呈現彭彭在HTML及CSS的課程應用，決定製作這個有回應式的網頁，並加了一點JavaScript函式，現在瀏覽網頁的角度和以往不同，就像建築師看建物的架構而不是表面，並思考這些網頁的功能是如何運作，希望自己快點學到更多，對於未來若能製作一份厲害的網頁感到興奮!    
                 </div>
             </div>
             <button class="back" onclick="turn(six);">返回</button>
@@ -189,7 +105,7 @@
         <div id="seven" class="question">其他想要對我們說的事情？
             <div class="answer">
                 <div class="text">
-                    原本想試試自己能否在下班時間仍持續學習，結果堅持漸漸養成了習慣，也讀出了興趣，閱讀的範圍越來越廣，內容包含電腦科學、人際溝通、管理、理財、歷史、心理...等，幾個月前決定回到大學所學的資訊相關行業，找了許多資源，便在網路上找到了彭彭的課程，發現課程真的很容易理解，教學的規劃，讓我覺得有一種吸引力，能夠像看劇一樣持續學習下去，有時練習完才發覺已經天黑，但一個人學習卻少了能夠與人交流的樂趣，因為在這個資訊爆炸的時代，如果真心想學，網路上可以找到許多的課程，但我想尋找一起努力的夥伴，因此看到WeHelp非常興奮，看了招生說明會，也認同參加不是一種依賴，因為職場上是需要有獨力完成作業能力的人聚集在一起，合力創造出巨大的價值，就像參加訓練營的目的，同樣的執行結果，程式過程可以千變萬化，可以互相學習彼此的思考模式，碰撞出更大的火花，科技進步的速度，需要我們不斷的學習，正好符合我追求的目標。目前工作已從原本的管理職申請為兼職，加上年紀的關係，沒有退路，必須全力以赴，養成的閱讀習慣也讓我有信心不會半途而廢，真的很希望加入WeHelp一起向前!我想人生永遠不嫌晚，故事可以和程式碼一樣改寫!
+                    原本想試試自己能否在下班時間仍持續學習，結果堅持漸漸養成了習慣，也讀出了興趣，閱讀的範圍越來越廣，內容包含電腦科學、人際溝通、管理、理財、歷史、心理...等，幾個月前決定回到大學所學的資訊相關行業，找了許多資源，便在網路上找到了彭彭的課程，發現課程真的很容易理解，教學的規劃，讓我覺得有一種吸引力，能夠像看劇一樣持續學習下去，有時練習完才發覺已經天黑，但一個人學習卻少了能夠與人交流的樂趣，因為在這個資訊爆炸的時代，如果真心想學，網路上可以找到許多的課程，但我想尋找一起努力的夥伴，因此看到WeHelp非常興奮，看了招生說明會，也認同參加不是一種依賴，因為職場上是需要有獨力完成作業能力的人聚集在一起，合力創造出巨大的價值，這也是參加訓練營的目的，同樣的執行結果，程式過程可以千變萬化，互相學習彼此的思考模式，碰撞出更大的火花，資訊行業的更新速度，需要我們不斷的學習，正好符合我追求的目標。目前工作從原本的管理職申請為兼職，再加上年齡的關係，沒有退路，必須全力以赴，維持的閱讀習慣也讓我有信心不會半途而廢，真的很希望加入WeHelp一起向前!我相信人生肯定可以和程式碼一樣改寫!    
                 </div>
             </div>
             <button class="back" onclick="turn(seven);">返回</button>
