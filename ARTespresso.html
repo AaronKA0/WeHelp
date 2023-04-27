@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" contenet="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <title>ART Espresso</title>
+        <link rel="stylesheet" type="text/css" href="artcoffee.css">
+    </head>
+    <body>
+        <!--標題LOGO及咖啡目錄-->
+        <header>
+            <a class="logo" href="AaronCoffee.html">A R T</a>
+            <a class="menu" href="espresso.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Espresso
+            </a>
+            <a class="menu" href="americano.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Americano
+            </a>            
+            <a class="menu" href="latte.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Caffe Latte
+            </a>
+            <a class="menu" href="cappuccino.html" 
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Cappuccino
+            </a>
+            <a class="menu" href="mocha.html"
+                onmouseover="over(this);" onmouseout="out(this);">
+                Caffe Mocha
+            </a>
+            <a class="menu" href="caramel.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Caramel Macchiato
+            </a>
+        </header>
+        <hr/>
+        <!--主要咖啡介紹-->
+        <div class="text">
+            <!--左圖片-->
+            <div class="left">
+                <img class="img" src="Espresso_.jpg"/>
+            </div>
+            <!--右文字-->
+            <div class="right">
+                <div class="title">Espresso  濃縮咖啡</div>
+                <hr/>
+                <div class="content">
+                    濃縮咖啡是通過高熱、高壓水強行通過極細研磨或是稍細研磨的咖啡粉製作而成。細研磨的咖啡粉被高壓熱水均勻穿過，萃取咖啡中的固體和可溶解成分，生成了一種接近糖漿質地般的飲料。
+                    <br><br>
+                    一杯醇正的濃縮咖啡一定要具備三個分層：<br>
+                    Crema：咖啡的油脂，甘甜味的來源。<br>
+                     Body：咖啡的主體，醇厚口感的來源。<br>
+                    Heart：咖啡的核心，苦味或酸味的來源。<br>
+                </div>
+            </div>
+        </div>
+                
+        <script>
+            //滑鼠移入目錄特效
+            function over(elem){
+                elem.style.fontSize="22px";
+                elem.style.color="black";
+                elem.style.marginRight="32px";
+            }
+            //滑鼠移出目錄恢復
+            function out(elem){
+                elem.style.fontSize="20px";
+                elem.style.color="gray";
+                elem.style.marginRight="40px";
+            }
+        </script>
+    </body>
+</html>
