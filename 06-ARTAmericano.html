@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" contenet="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <title>ART Americano</title>
+        <link rel="stylesheet" type="text/css" href="04-coffee.css">
+    </head>
+    <body>
+        <!--標題LOGO及咖啡目錄-->
+        <header>
+            <a class="logo" href="AaronCoffee.html">A R T</a>
+            <a class="menu" href="espresso.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Espresso
+            </a>
+            <a class="menu" href="americano.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Americano
+            </a>            
+            <a class="menu" href="latte.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Caffe Latte
+            </a>
+            <a class="menu" href="cappuccino.html" 
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Cappuccino
+            </a>
+            <a class="menu" href="mocha.html"
+                onmouseover="over(this);" onmouseout="out(this);">
+                Caffe Mocha
+            </a>
+            <a class="menu" href="caramel.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Caramel Macchiato
+            </a>
+        </header>
+        <hr/>
+        <!--主要咖啡介紹-->
+        <div class="text">
+            <!--左圖片-->
+            <div class="left">
+                <img class="img" src="Americano_.jpg"/>
+            </div>
+            <!--右文字-->
+            <div class="right">
+                <div class="title">Americano  美式咖啡</div>
+                <hr/>
+                <div class="content">
+                    由義式濃縮咖啡加入熱水製作而成。或者是用義式咖啡機製作，在萃取完了濃縮咖啡後，繼續讓機器供水直到一杯完整的咖啡。
+                    <br><br>
+                    第二次世界大戰時，美國步兵在義大利駐紮，喝不慣當地又濃又嗆的義式濃縮咖啡，因此要求在義式濃縮中加入熱水稀釋。
+                </div>
+            </div>
+        </div>
+                
+        <script>
+            //滑鼠移入目錄特效
+            function over(elem){
+                elem.style.fontSize="22px";
+                elem.style.color="black";
+                elem.style.marginRight="32px";
+            }
+            //滑鼠移入目錄恢復
+            function out(elem){
+                elem.style.fontSize="20px";
+                elem.style.color="gray";
+                elem.style.marginRight="40px";
+            }
+        </script>
+    </body>
+</html>
