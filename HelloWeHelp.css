@@ -86,3 +86,91 @@ header{
         width:90%;
     }
 }
+
+/*---時間分配表CSS---*/
+.first{
+    display:flex;
+    flex-wrap:wrap;
+    font-size:18px;
+    padding:10px 30px;
+}
+.second{
+    display:flex;
+    flex-wrap:wrap;
+    font-size:18px;
+    padding:10px 30px;
+}
+.third{
+    display:flex;
+    flex-wrap:wrap;
+    font-size:18px;
+    padding:10px 30px;
+}
+#two-HR{
+    flex:none;
+    width:17%;
+    padding:5px;
+}
+#one-HR{
+    flex:none;
+    width:14%;
+    padding:5px;
+}
+#onehalf-HR{
+    flex:none;
+    width:11%;
+    padding:5px;
+}
+#halfhalf-HR{
+    flex:none;
+    width:8%;
+    padding:5px;
+}
+.learning{
+    background-color:lightblue;
+    border:1px solid lightgrey;
+}
+.eatting{
+    background-color:wheat;
+    border:1px solid lightgrey;
+}
+.break{
+    background-color:white;
+    border:1px solid lightgrey;
+}
+.exercise{
+    background-color:white;
+    border:1px solid lightgrey;
+}
+.meeting{
+    color:red;
+}
+.end{
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+    padding:10px;
+}
+@media(max-width:800px){
+    .first{
+        justify-content:center;
+    }
+    .second{
+        justify-content:center;
+    }
+    .third{
+        justify-content:center;
+    }
+    #two-HR{
+        width:60%;
+    }
+    #one-HR{
+        width:60%;
+    }
+    #onehalf-HR{
+        width:60%;
+    }
+    #halfhalf-HR{
+        width:60%;
+    }
+}
