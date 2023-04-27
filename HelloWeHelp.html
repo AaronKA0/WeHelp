@@ -3,12 +3,15 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta charset="utf-8"/>
-        <title>Application Form</title>
-        <link rel="stylesheet" type="text/css" href="HelloWeHelp.css">
+        <title>Aaron's Application</title>
+        <link rel="stylesheet" type="text/css" href="wehelp.css">
     </head>
     <body>
-        <header>WeHelp 申請網頁</header>
+        <!--網頁標題-->
+        <header>WeHelp Application</header>
+        <!--首頁 7 題題目，第 1 題直接顯示簡介， 2 ~ 7 使用按鈕點擊顯示-->
         <div id="all" class="title">
+            <!--第一題-->
             <div class="self">
                 <div class="self-title">
                     <img class="self-img" src="Q1.jpg"/>
@@ -19,63 +22,110 @@
                     曾到澳洲打工兩年，在咖啡業待了七年多，下班平均每週花40多小時閱讀有興趣的書籍，維持三年發現自己對軟體工程還是保有熱情，便尋找資源找到了彭彭的課程，雖然畢業後沒有進入資訊相關行業，練習的過程還是讓我下定決心轉職，因此已從管理職位申請為兼職，計畫在下半年離職。我想證明嘗試闖完不同經歷後，還是能努力找回原本的路!
                 </div>
             </div>
+            <!--第二題-->
             <button
                 class="btn"
                 onmouseover="over(this);" onmouseout="out(this);"
-                onclick="content(two);"
-            ><img class="img" src="Q2.jpg"/><br>
-            為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。</button>
+                onclick="content(two);">
+                <img class="img" src="Q2.jpg"/><br>
+                為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。
+            </button>
+            <!--第三題-->
             <button 
                 class="btn"
                 onmouseover="over(this);" onmouseout="out(this);"
-                onclick="content(three);"
-            ><img class="img" src="Q3.jpg"/><br>
-            如果參與這個計畫，會怎麼安排學習時間？</button>
+                onclick="content(three);">
+                <img class="img" src="Q3.jpg"/><br>
+                如果參與這個計畫，會怎麼安排學習時間？
+            </button>
+            <!--第四題-->
             <button 
                 class="btn"
                 onmouseover="over(this);" onmouseout="out(this);"
-                onclick="content(four);"
-            ><img class="img" src="Q4.jpg"/><br>
-            是否有想要加入的軟體公司？為什麼想加入該公司？</button>  
+                onclick="content(four);">
+                <img class="img" src="Q4.jpg"/><br>
+                是否有想要加入的軟體公司？為什麼想加入該公司？
+            </button>
+            <!--第五題-->  
             <button 
                 class="btn"
                 onmouseover="over(this);" onmouseout="out(this);"
-                onclick="content(five);"
-            ><img class="img" src="Q5.jpg"/><br>
-            請描述一件讓你產生明顯負面情緒的事情，你如何處理該情緒？</button>
+                onclick="content(five);">
+                <img class="img" src="Q5.jpg"/><br>
+                請描述一件讓你產生明顯負面情緒的事情，你如何處理該情緒？
+            </button>
+            <!--第六題-->
             <button 
                 class="btn"
                 onmouseover="over(this);" onmouseout="out(this);"
-                onclick="content(six);"
-            ><img class="img" src="Q6.jpg"/><br>
-            關於這份申請網頁，請分享一個你開發時的技術心得。</button>
+                onclick="content(six);">
+                <img class="img" src="Q6.jpg"/><br>
+                關於這份申請網頁，請分享一個你開發時的技術心得。
+            </button>
+            <!--第七題-->
             <button 
                 class="btn"
                 onmouseover="over(this);" onmouseout="out(this);"
-                onclick="content(seven);"
-            ><img class="img" src="Q7.jpg"/><br>
-            其他想要對我們說的事情？</button>
+                onclick="content(seven);">
+                <img class="img" src="Q7.jpg"/><br>
+                其他想要對我們說的事情？
+            </button>
         </div>
 
+        <!-- 2 ~ 7 回答問題-->
+        <!--第二題回答-->
         <div id="two" class="question">為了成為軟體工程師，曾做過什麼努力？若有具體專案作品請分享給我們。
             <div class="answer">
                 <div class="text">
                     雖然大學是資訊工程系，但我把自己當非本科系一樣從頭學習，透過彭彭的課程已經在幾個月內看完HTML、CSS、JavaScript以及Python，目前按照WeHelp第一階段的訓練規劃，持續進行練習，讓自己能在進入實際訓練時累積更多實力。
+                    <br><br>
+                    <!--作品連結-->
+                    <a href="C:\Users\AaronKao\OneDrive\桌面\VScode\ARTcoffee\Aaroncoffee.html">作品</a>
                 </div>
             </div>
             <button class="back" onclick="turn(two);">返回</button>
         </div>
+        <!--第三題回答-->
         <div id="three" class="question">如果參與這個計畫，會怎麼安排學習時間？
             <div class="answer">
                 <div class="text">
-                    在第一階段時，目前兼職的工作時間大約一週20~30小時，規畫下班學習時間在50~55小時，若在此階段執行困難，會直接離職全心投入，而在進入第二階段前，一定會離職，全力準備接下來的訓練，規劃一週70小時
-                    <br>第一階段:50~55 hr/週，平日6~7 hr/日，假日10 hr/日
-                    <br>第二階段:70 hr/週，10 hr/日
-                    <br>第三階段:70 hr/週，10 hr/日
+                    在第一階段時，目前兼職的工作時間大約一週20~30小時，規畫下班學習時間在43~47小時，若在此階段學習進度有困難，會直接離職全心投入，而在進入第二階段前，一定會離職，全力準備接下來的訓練，規劃一週63小時。
+                    <br>第一階段:43~47 hr/週，上班日學習 5 hr/日，假日(2-3天/週)學習 9 hr/日。
+                    <br>第二階段:63 hr/週，9 hr/日。
+                    <br>第三階段:63 hr/週，9 hr/日。
                 </div>
             </div>
+            <!--時間規劃表-->
+            <div class="first">
+                <div id="two-HR" class="learning">07:00-09:00 <br>(2小時) <br>學習</div>
+                <div id="one-HR" class="eatting">09:00-10:00 <br>(1小時) <br>早餐</div>
+                <div id="two-HR"class="learning">
+                    10:00-12:00 
+                    <span class="meeting">週一線上會議</span>
+                    <br>(2小時) <br>學習
+                </div>
+                <div id="one-HR" class="eatting">12:00-13:00 <br>(1小時)<br>午餐</div>
+            </div>
+            <div class="second">
+                <div id="two-HR"></div>
+                <div id="one-HR" class="learning">13:00-14:00 <br>(1小時) <br>學習</div>
+                <div id="halfhalf-HR" class="break">14:00-14:15 <br>(15分鐘) <br>休息</div>
+                <div id="one-HR" class="learning">14:15-15:15 <br>(1小時) <br>學習</div>
+                <div id="halfhalf-HR" class="break">15:15-15:30 <br>(15分鐘) <br>休息</div>
+                <div id="one-HR" class="learning">15:30-16:30 <br>(1小時) <br>學習</div>
+            </div>
+            <div class="third">
+                <div id="two-HR"></div>
+                <div id="one-HR"></div>
+                <div id="one-HR" class="exercise">16:30-17:30 <br>(1小時) <br>運動</div>
+                <div id="onehalf-HR" class="eatting">17:30-19:00 <br>(1.5小時) <br>洗澡 & 晚餐</div>
+                <div id="two-HR" class="learning">19:00-21:00 <br>(2小時) <br>學習</div>
+                <div id="two-HR" class="break">21:00-23:00 <br>(2小時) <br>Relax</div>
+            </div>
+            <div class="end">總計: 學習:9小時</div>
             <button class="back" onclick="turn(three);">返回</button>
         </div>
+        <!--第四題回答-->
         <div id="four" class="question">是否有想要加入的軟體公司？為什麼想加入該公司？
             <div class="answer">
                 <div class="text">
@@ -85,6 +135,7 @@
             </div>
             <button class="back" onclick="turn(four);">返回</button>
         </div>
+        <!--第五題回答-->
         <div id="five" class="question">請描述一件讓你產生明顯負面情緒的事情，你如何處理該情緒？
             <div class="answer">
                 <div class="text">
@@ -94,6 +145,7 @@
             </div>
             <button class="back" onclick="turn(five);">返回</button>
         </div>
+        <!--第六題回答-->
         <div id="six" class="question">關於這份申請網頁，請分享一個你開發時的技術心得。
             <div class="answer">
                 <div class="text">
@@ -102,6 +154,7 @@
             </div>
             <button class="back" onclick="turn(six);">返回</button>
         </div>
+        <!--第七題回答-->
         <div id="seven" class="question">其他想要對我們說的事情？
             <div class="answer">
                 <div class="text">
@@ -112,18 +165,22 @@
         </div>
 
         <script>
+            //滑鼠移入特效
             function over(elem){
                 elem.style.boxShadow="2px 2px 6px 2px";
                 elem.style.textDecoration="underline";
             }
+            //滑鼠移出恢復
             function out(elem){
                 elem.style.boxShadow="none";
                 elem.style.textDecoration="none";
             }
+            //點擊問題顯示回答
             function content(elem){
                 all.style.display="none";
                 elem.style.display="block";
             }
+            //按下返回顯示首頁
             function turn(elem){
                 elem.style.display="none";
                 all.style.display="flex";
