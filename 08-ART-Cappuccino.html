@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" contenet="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <title>ART Cappuccino</title>
+        <link rel="stylesheet" type="text/css" href="04-coffee.css">
+    </head>
+    <body>
+        <!--標題LOGO及咖啡目錄-->
+        <header>
+            <a class="logo" href="AaronCoffee.html">A R T</a>
+            <a class="menu" href="espresso.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Espresso
+            </a>
+            <a class="menu" href="americano.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Americano
+            </a>            
+            <a class="menu" href="latte.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Caffe Latte
+            </a>
+            <a class="menu" href="cappuccino.html" 
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Cappuccino
+            </a>
+            <a class="menu" href="mocha.html"
+                onmouseover="over(this);" onmouseout="out(this);">
+                Caffe Mocha
+            </a>
+            <a class="menu" href="caramel.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Caramel Macchiato
+            </a>
+        </header>
+        <hr/>
+        <!--主要咖啡介紹-->
+        <div class="text">
+            <!--左圖片-->
+            <div class="left">
+                <img class="img" src="Cappuccino_.jpg"/>
+            </div>
+            <!--右文字-->
+            <div class="right">
+                <div class="title">Cappuccino  卡布奇諾</div>
+                <hr/>
+                <div class="content">
+                    卡布奇諾與拿鐵咖啡的差別在於多了奶泡，調法是咖啡鮮奶與奶泡接近1：1。首先倒入濃縮咖啡，然後淋上熱奶，並將奶泡倒入即完成。
+                    <br><br>
+                    在濃縮咖啡上，倒入以蒸汽發泡的牛奶。此時咖啡的顏色，就像方濟嘉布遣會（拉丁語：Ordo Fratrum Minorum Capuccinorum）教會的修士在深褐色的外衣上覆上一條頭巾一樣，卡布奇諾咖啡因此得名。
+                </div>
+            </div>
+        </div>
+                
+        <script>
+            //滑鼠移入目錄特效
+            function over(elem){
+                elem.style.fontSize="22px";
+                elem.style.color="black";
+                elem.style.marginRight="32px";
+            }
+            //滑鼠移出目錄恢復
+            function out(elem){
+                elem.style.fontSize="20px";
+                elem.style.color="gray";
+                elem.style.marginRight="40px";
+            }
+        </script>
+    </body>
+</html>
