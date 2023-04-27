@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" contenet="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <title>ART Gallery</title>
+        <link rel="stylesheet" type="text/css" href="ArtGallery.css">
+    </head>
+    <body>
+        <!--拉花藝術畫廊標題-->
+        <header>
+            <a class="title" href="AaronCoffee.html">ART&emsp;Gallery</a>
+        </header>
+        <hr/>
+        <!--展示照片-->
+        <div class="piece">
+            <img class="img" src="ART (1).jpg"/>
+            <img class="img" src="ART (2).jpg"/>
+            <img class="img" src="ART (3).jpg"/>
+            <img class="img" src="ART (4).jpg"/>
+            <img class="img" src="ART (5).jpg"/>
+            <img class="img" src="ART (6).jpg"/>
+            <img class="img" src="ART (7).jpg"/>
+            <img class="img" src="ART (8).jpg"/>
+            <img class="img" src="ART (9).jpg"/>
+            <img class="img" src="ART (10).jpg"/>
+            <img class="img" src="ART (11).jpg"/>
+            <img class="img" src="ART (12).jpg"/>
+            <img class="img" src="ART (13).jpg"/>
+            <img class="img" src="ART (14).jpg"/>
+            <img class="img" src="ART (15).jpg"/>
+            <img class="img" src="ART (16).jpg"/>
+            <img class="img" src="ART (17).jpg"/>
+            <img class="img" src="ART (18).jpg"/>
+            <img class="img" src="ART (19).jpg"/>
+            <img class="img" src="ART (20).jpg"/>
+            <img class="img" src="ART (21).jpg"/>
+        </div>
+    </body>        
+</html>
