@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" contenet="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <title>ART caffe Latte</title>
+        <link rel="stylesheet" type="text/css" href="04-coffee.css">
+    </head>
+    <body>
+        <!--標題LOGO及咖啡目錄-->
+        <header>
+            <a class="logo" href="AaronCoffee.html">A R T</a>
+            <a class="menu" href="espresso.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Espresso
+            </a>
+            <a class="menu" href="americano.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Americano
+            </a>            
+            <a class="menu" href="latte.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Caffe Latte
+            </a>
+            <a class="menu" href="cappuccino.html" 
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Cappuccino
+            </a>
+            <a class="menu" href="mocha.html"
+                onmouseover="over(this);" onmouseout="out(this);">
+                Caffe Mocha
+            </a>
+            <a class="menu" href="caramel.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Caramel Macchiato
+            </a>
+        </header>
+        <hr/>
+        <!--主要咖啡介紹-->
+        <div class="text">
+            <!--左圖片-->
+            <div class="left">
+                <img class="img" src="Latte_.jpg"/>
+            </div>
+            <!--右文字-->
+            <div class="right">
+                <div class="title">Caffe Latte  拿鐵咖啡</div>
+                <hr/>
+                <div class="content">
+                    由濃縮咖啡融合新鮮的鮮奶，並加入些許奶泡。它與卡布奇諾相比，有更多鮮奶味道。義大利語latte僅有奶的意思，而非義大利語使用者常簡稱latte，泛指由熱鮮奶所沖泡的飲品。
+                    <br><br>
+                    咖啡拉花：將鮮奶倒咖啡杯時，咖啡師透過手腕些微的動作便能於杯中畫出圖案，這成為了一種藝術。
+                </div>
+            </div>
+        </div>
+                
+        <script>
+            //滑鼠移入目錄特效
+            function over(elem){
+                elem.style.fontSize="22px";
+                elem.style.color="black";
+                elem.style.marginRight="32px";
+            }
+            //滑鼠移出目錄恢復
+            function out(elem){
+                elem.style.fontSize="20px";
+                elem.style.color="gray";
+                elem.style.marginRight="40px";
+            }
+        </script>
+    </body>
+</html>
