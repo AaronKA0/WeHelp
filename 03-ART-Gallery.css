@@ -21,11 +21,11 @@ header{
 }
 @media(max-width:1250px){
     .img{
-        width:35%;
+        width:45%;
     }    
 }
 @media(max-width:500px){
     .img{
-        width:80%;
+        width:90%;
     }
 }
