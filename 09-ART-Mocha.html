@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" contenet="width=device-width, initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <title>ART Caffe Mocha</title>
+        <link rel="stylesheet" type="text/css" href="04-coffee.css">
+    </head>
+    <body>
+        <!--標題LOGO及咖啡目錄-->
+        <header>
+            <a class="logo" href="AaronCoffee.html">A R T</a>
+            <a class="menu" href="espresso.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Espresso
+            </a>
+            <a class="menu" href="americano.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Americano
+            </a>            
+            <a class="menu" href="latte.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Caffe Latte
+            </a>
+            <a class="menu" href="cappuccino.html" 
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Cappuccino
+            </a>
+            <a class="menu" href="mocha.html"
+                onmouseover="over(this);" onmouseout="out(this);">
+                Caffe Mocha
+            </a>
+            <a class="menu" href="caramel.html"
+                onmouseover="over(this);" onmouseout="out(this);"
+                >Caramel Macchiato
+            </a>
+        </header>
+        <hr/>
+        <!--主要咖啡介紹-->
+        <div class="text">
+            <!--左圖片-->
+            <div class="left">
+                <img class="img" src="Mocha_.jpg"/>
+            </div>
+            <!--右文字-->
+            <div class="right">
+                <div class="title">Caffe Mocha  摩卡</div>
+                <hr/>
+                <div class="content">
+                    和經典的義式拿鐵咖啡一樣，由濃縮咖啡融合新鮮的鮮奶，額外再加入香濃巧克力，再覆蓋上鮮奶油。
+                    <br><br>
+                    摩卡咖啡的名字起源於位在紅海海邊的葉門小鎮摩卡，有一種「巧克力色」的咖啡豆，這讓人產生了在咖啡混入巧克力的聯想，發展出巧克力濃縮咖啡飲料。這個地方在15世紀時壟斷了咖啡的出口貿易，特別是對阿拉伯半島區域的咖啡出口貿易影響特別大。在歐洲，摩卡咖啡既可能指這種飲料，也可能僅僅指用摩卡咖啡豆泡出來的咖啡。
+                </div>
+            </div>
+        </div>
+                
+        <script>
+            //滑鼠移入目錄特效
+            function over(elem){
+                elem.style.fontSize="22px";
+                elem.style.color="black";
+                elem.style.marginRight="32px";
+            }
+            //滑鼠移出目錄恢復
+            function out(elem){
+                elem.style.fontSize="20px";
+                elem.style.color="gray";
+                elem.style.marginRight="40px";
+            }
+        </script>
+    </body>
+</html>
