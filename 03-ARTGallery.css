@@ -1,0 +1,31 @@
+header{
+    font-weight:bold;
+    text-align:center;
+    padding:20px;
+    margin-bottom:10px;
+}
+.title{
+    color:black;
+    font-size:2em;
+    text-align:center;
+    text-decoration:none;
+}
+.piece{
+    text-align:center;
+    padding:15px;
+}
+.img{
+    width:20%;
+    margin:50px;
+    border:10px solid gray;
+}
+@media(max-width:1250px){
+    .img{
+        width:35%;
+    }    
+}
+@media(max-width:500px){
+    .img{
+        width:80%;
+    }
+}
