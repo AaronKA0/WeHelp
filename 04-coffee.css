@@ -62,23 +62,15 @@ header{
     .menu{
         width:40%;
     }
-    .picture{
-        width:70%;
-    }
-}
-@media(max-width:800px){
     .left{
-        width:90%;
+        width:80%;
     }
     .right{
-        width:90%;
+        width:80%;
     }
 }
 @media(max-width:500px){
     .menu{
-        width:80%;
-    }
-    .picture{
         width:80%;
     }
 }
